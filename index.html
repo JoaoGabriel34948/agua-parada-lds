@@ -13,72 +13,16 @@
     </header>
 
     <main>
-        <!-- Seção informativa sobre o perigo da água parada -->
-        <section id="perigo">
-            <h2>O Perigo da Água Parada</h2>
-            <p>Focos de água parada podem acumular mosquitos transmissores de doenças. Ajude a evitar esses focos em Laranjeiras do Sul!</p>
-        </section>
-
-        <!-- Seção sobre como evitar água parada -->
-        <section id="como-evitar">
-            <h2>Como Evitar o Problema</h2>
-            <ul>
-                <li>Elimine recipientes que possam acumular água.</li>
-                <li>Limpe ralos, calhas e vasos de plantas regularmente.</li>
-                <li>Evite o acúmulo de água em lajes e quintais.</li>
-                <li>Colabore com os agentes de saúde em inspeções locais.</li>
-            </ul>
-        </section>
-
-        <!-- Mapa interativo (sugestão de integração futura) -->
-        <section id="mapa">
-            <h2>Mapa Interativo</h2>
-            <p>Veja abaixo os locais em Laranjeiras do Sul com focos de água parada reportados:</p>
-            <!-- Aqui pode ser adicionado um iframe ou imagem de um mapa interativo -->
-            <div id="mapa-container">
-                <p>[Mapa Interativo a ser implementado]</p>
-            </div>
-        </section>
-
-        <!-- Jogo interativo de limpeza de focos de água parada -->
+        <!-- Seção de limpeza com imagem das gotas de água -->
         <section id="jogo-limpeza">
             <h2>Limpe os Focos de Água Parada</h2>
             <div id="game-container">
-                <p>Clique nos focos para "limpar" e ganhar pontos!</p>
-                <div id="foco1" class="foco"></div>
-                <div id="foco2" class="foco"></div>
-                <div id="foco3" class="foco"></div>
+                <p>Clique nas gotas de água para "limpar" e ganhar pontos!</p>
+                <div id="foco1" class="foco"><img src="imagens/gota.png" alt="Gota de água"></div>
+                <div id="foco2" class="foco"><img src="imagens/gota.png" alt="Gota de água"></div>
+                <div id="foco3" class="foco"><img src="imagens/gota.png" alt="Gota de água"></div>
             </div>
             <p id="pontuacao">Pontuação: 0</p>
-        </section>
-
-        <!-- Seção de depoimentos -->
-        <section id="depoimentos">
-            <h2>Depoimentos</h2>
-            <blockquote>
-                <p>"Perdi dias de trabalho por causa de uma doença transmitida por mosquito. Agora, cuido sempre do meu quintal!" - João, morador local</p>
-            </blockquote>
-            <blockquote>
-                <p>"Fiquei muito preocupado com meus filhos quando eles adoeceram. A conscientização é importante!" - Maria, moradora de Laranjeiras do Sul</p>
-            </blockquote>
-        </section>
-
-        <!-- Formulário de denúncia de focos de água parada -->
-        <section id="denuncia">
-            <h2>Formulário de Denúncia</h2>
-            <p>Encontrou um foco de água parada? Envie uma denúncia:</p>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-                
-                <label for="local">Localização do foco:</label>
-                <input type="text" id="local" name="local" required>
-                
-                <label for="descricao">Descrição do foco:</label>
-                <textarea id="descricao" name="descricao" rows="4" required></textarea>
-                
-                <button type="submit">Enviar Denúncia</button>
-            </form>
         </section>
     </main>
 
