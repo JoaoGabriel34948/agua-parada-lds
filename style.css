@@ -1,39 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #e0f7fa;
-    color: #004d40;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-header {
-    text-align: center;
-    background-color: #00695c;
-    color: #ffffff;
-    padding: 20px;
-    width: 100%;
-}
-
-main {
-    max-width: 800px;
-    padding: 20px;
-}
-
-section {
-    margin-top: 20px;
-}
-
-#jogo-limpeza {
-    margin-top: 20px;
-}
-
 #game-container {
     display: flex;
     gap: 20px;
@@ -43,11 +7,16 @@ section {
 .foco {
     width: 100px;
     height: 100px;
-    background-color: #00796b;
-    border-radius: 50%;
     position: relative;
     cursor: pointer;
     animation: drop 3s infinite;
+}
+
+.foco img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none; /* para não impedir o clique */
 }
 
 @keyframes drop {
@@ -57,30 +26,4 @@ section {
     50% {
         transform: scale(1.2);
     }
-}
-
-blockquote {
-    font-style: italic;
-    color: #555;
-    border-left: 5px solid #004d40;
-    padding-left: 15px;
-    margin: 10px 0;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-form input, form textarea, form button {
-    padding: 8px;
-    border: 1px solid #004d40;
-    border-radius: 5px;
-}
-
-form button {
-    background-color: #004d40;
-    color: white;
-    cursor: pointer;
 }
