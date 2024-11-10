@@ -1,10 +1,16 @@
-let pontuacao = 0;
+// Seleciona todas as seções com a classe 'fade-in'
+const sections = document.querySelectorAll('.fade-in');
 
-document.querySelectorAll('.foco').forEach(foco => {
-    foco.addEventListener('click', () => {
-        foco.style.backgroundColor = '#004d40'; // muda a cor para indicar que foi "limpo"
-        foco.style.pointerEvents = 'none'; // desativa o clique para evitar cliques repetidos
-        pontuacao += 10;
-        document.getElementById('pontuacao').innerText = `Pontuação: ${pontuacao}`;
+// Função para adicionar classe 'visible' quando a seção está visível na janela
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
     });
+});
+
+// Observa cada seção para aplicar o efeito de rolagem
+sections.forEach(section => {
+    observer.observe(section);
 });
