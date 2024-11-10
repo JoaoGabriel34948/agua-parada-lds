@@ -9,20 +9,51 @@
 <body>
     <header>
         <h1>Água Parada em Laranjeiras do Sul</h1>
-        <p>Atenção aos focos de água parada e seus perigos!</p>
+        <p>Aprenda sobre os perigos da água parada e como evitá-los!</p>
     </header>
 
     <main>
-        <!-- Seção de limpeza com imagem das gotas de água -->
-        <section id="jogo-limpeza">
-            <h2>Limpe os Focos de Água Parada</h2>
-            <div id="game-container">
-                <p>Clique nas gotas de água para "limpar" e ganhar pontos!</p>
-                <div id="foco1" class="foco"><img src="imagens/gota.png" alt="Gota de água"></div>
-                <div id="foco2" class="foco"><img src="imagens/gota.png" alt="Gota de água"></div>
-                <div id="foco3" class="foco"><img src="imagens/gota.png" alt="Gota de água"></div>
-            </div>
-            <p id="pontuacao">Pontuação: 0</p>
+        <!-- Seção 1: O perigo da água parada -->
+        <section id="perigo" class="fade-in">
+            <h2>O Perigo da Água Parada</h2>
+            <p>Água parada é um ambiente ideal para o desenvolvimento de mosquitos que transmitem doenças como dengue, zika e chikungunya. Em Laranjeiras do Sul, essa é uma preocupação constante. Vamos juntos combater esses focos!</p>
+        </section>
+
+        <!-- Seção 2: Como evitar o problema -->
+        <section id="como-evitar" class="fade-in">
+            <h2>Como Evitar o Problema</h2>
+            <ul>
+                <li>Remova objetos que possam acumular água, como pneus e garrafas.</li>
+                <li>Limpe ralos e calhas regularmente.</li>
+                <li>Deixe tampados recipientes de armazenamento de água.</li>
+                <li>Colabore com os agentes de saúde locais.</li>
+            </ul>
+        </section>
+
+        <!-- Seção 3: Depoimentos -->
+        <section id="depoimentos" class="fade-in">
+            <h2>Depoimentos</h2>
+            <blockquote>
+                <p>"Depois de ver casos na minha família, nunca deixo água parada no quintal." - Ana, moradora de Laranjeiras do Sul</p>
+            </blockquote>
+            <blockquote>
+                <p>"É assustador como pequenos descuidos podem causar doenças sérias." - Pedro, morador local</p>
+            </blockquote>
+        </section>
+
+        <!-- Seção 4: Denúncia de focos de água parada -->
+        <section id="denuncia" class="fade-in">
+            <h2>Denúncia de Focos de Água Parada</h2>
+            <p>Viu algum foco de água parada? Envie uma denúncia anônima:</p>
+            <form>
+                <label for="local">Local do foco:</label>
+                <input type="text" id="local" name="local" required>
+                
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+                
+                <button type="submit">Enviar Denúncia</button>
+            </form>
         </section>
     </main>
 
